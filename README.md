@@ -13,4 +13,5 @@ cp fedi.login.example fedi.login
 # edit fedi.login
 
 ./run.sh ihatebeinga.live
+./user.sh ihatebeing.alive floatingghost
 ```

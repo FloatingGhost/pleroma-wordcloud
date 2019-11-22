@@ -5,7 +5,7 @@ g = open("words.final.txt", "w")
 
 for line in f:
     k = BeautifulSoup(line).text
-    k = " ".join([x for x in k.split(" ") if not (x.startswith("@") or x.startswith(".mas") or "http" in x or "png" in x or "jpg" in x)])
+    k = " ".join([x for x in k.split(" ") if len(x) > 5 and not (x.startswith("@") or x.startswith(".mas") or "http" in x or "png" in x or "jpg" in x) ])
     if len(k) > 1:
         g.write("{}\n".format(k.strip()))
 
